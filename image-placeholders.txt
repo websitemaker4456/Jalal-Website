@@ -1,0 +1,26 @@
+### Image Placeholders for Jalal's Website
+
+To complete the website, please create or source the following images:
+
+1. jalal-profile.jpg
+   - Description: Professional headshot or portrait of Muhammad Jalal Wajid
+   - Used in: Home page (index.html)
+   - Size: Square, approximately 800x800px
+
+2. jalal-about.jpg 
+   - Description: Professional image of Jalal in a business setting
+   - Used in: About page (about.html)
+   - Size: Landscape or portrait, approximately 800x1000px
+
+Note: Add these images to the /Jalal/assets/ directory to complete the website. The website is designed to work with these specific image filenames.
+
+For testing purposes, you can use placeholder images by:
+1. Using stock photos (ensuring proper licensing)
+2. Using placeholder services like https://placehold.co/ 
+3. Creating solid color blocks with the person's initials
+
+Example:
+- For jalal-profile.jpg: https://placehold.co/800x800/1e88e5/ffffff?text=MJW
+- For jalal-about.jpg: https://placehold.co/800x1000/1e88e5/ffffff?text=MJW
+
+Once the actual images are available, simply replace these placeholder files while keeping the filenames the same. 

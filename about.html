@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Muhammad Jalal Wajid</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .bio-section {
+            display: flex;
+            gap: var(--space-xxl);
+            margin-bottom: var(--space-xxl);
+        }
+
+        .bio-text {
+            flex: 1;
+        }
+
+        .bio-text p {
+            margin-bottom: var(--space-md);
+        }
+
+        .bio-text p.lead {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        .bio-image {
+            flex-basis: 40%;
+        }
+
+        .image-container {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .image-container img {
+            width: 100%;
+            display: block;
+            transform: scale(1.05);
+            transition: transform var(--transition-slow);
+        }
+
+        .image-container:hover img {
+            transform: scale(1);
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(33, 150, 243, 0.3), rgba(66, 165, 245, 0));
+            pointer-events: none;
+        }
+
+        .education-section,
+        .goals-section {
+            margin-bottom: var(--space-xxl);
+            padding: var(--space-xl);
+            background-color: var(--color-card);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--color-border);
+        }
+
+        .goals-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .goals-section li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: var(--space-md);
+        }
+
+        .goals-section li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: rgba(33, 150, 243, 0.1);
+            border-radius: var(--border-radius-sm);
+        }
+
+        .goals-section li::after {
+            content: '→';
+            position: absolute;
+            left: 0.25rem;
+            top: 0.15rem;
+            color: var(--color-primary);
+            font-weight: bold;
+        }
+
+        @media (max-width: 992px) {
+            .bio-section {
+                flex-direction: column-reverse;
+                gap: var(--space-xl);
+            }
+
+            .bio-image {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">MJW<span class="accent">.</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i data-feather="moon"></i>
+            </div>
+        </header>
+
+        <main>
+            <div class="page-header">
+                <h1>About Me</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / About
+                </div>
+            </div>
+
+            <section class="bio-section">
+                <div class="bio-text">
+                    <p class="lead">
+                        I'm currently pursuing my Bachelor's in Business Administration at IBA Karachi, with a keen
+                        interest in marketing, operations, and entrepreneurial ventures.
+                    </p>
+
+                    <p>
+                        My journey began in my family's construction business, where I learned the fundamentals of
+                        procurement and management. Since then, I've interned at various organizations including Wajid
+                        Iqbal & Co., Innova Group, and am actively seeking opportunities to work with dynamic startups
+                        and FMCG brands.
+                    </p>
+
+                    <p>
+                        Through my academic and professional experiences, I've developed a passion for understanding
+                        consumer behavior, market trends, and innovative business strategies. I believe in the power of
+                        combining analytical thinking with creative approaches to solve complex business challenges.
+                    </p>
+
+                    <p>
+                        Outside of my professional pursuits, I'm actively involved in the IBA Dramatics Society as a
+                        COO,
+                        where I've had the opportunity to organize and execute large-scale theatrical events. This
+                        experience has enhanced my leadership, teamwork, and project management skills.
+                    </p>
+                </div>
+                <div class="bio-image">
+                    <div class="image-container">
+                        <img src="assets/WhatsApp Image 2025-05-18 at 18.00.00 (1).jpeg" alt="Muhammad Jalal Wajid">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="education-section">
+                <div class="section-title">
+                    <h3>Education</h3>
+                </div>
+                <div class="education-content">
+                    <h4>Institute of Business Administration (IBA), Karachi</h4>
+                    <p>Bachelor of Business Administration (BBA)</p>
+                    <p>Class of 2026</p>
+                    <p>Focusing on Marketing and Operations Management</p>
+                </div>
+            </section>
+
+            <section class="goals-section">
+                <div class="section-title">
+                    <h3>Career Goals</h3>
+                </div>
+                <p>
+                    I aim to build a career at the intersection of marketing, innovation, and business development,
+                    ultimately contributing to scalable, value-driven enterprises in Pakistan and beyond.
+                </p>
+                <ul>
+                    <li>Gain hands-on experience in marketing and strategy roles at leading organizations</li>
+                    <li>Develop expertise in digital marketing and market research methodologies</li>
+                    <li>Cultivate leadership skills through collaborative projects and initiatives</li>
+                    <li>Contribute to the growth of sustainable businesses that create positive impact</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">MJW<span class="accent">.</span></div>
+                    <p>Aspiring to build a career at the intersection of marketing, innovation, and business
+                        development.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="http://linkedin.com/in/mjalalw" target="_blank"><i data-feather="linkedin"></i></a>
+                        <a href="mailto:m.jalal.w10@gmail.com"><i data-feather="mail"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Muhammad Jalal Wajid. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            feather.replace();
+
+            // Theme toggle
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                const icon = themeToggle.querySelector('i');
+                if (document.body.classList.contains('dark-mode')) {
+                    icon.setAttribute('data-feather', 'sun');
+                } else {
+                    icon.setAttribute('data-feather', 'moon');
+                }
+                feather.replace();
+            });
+        });
+    </script>
+</body>
+
+</html>

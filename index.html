@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Jalal Wajid | Business Student</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="page-container">
+        <header>
+            <div class="logo">MJW<span class="accent">.</span></div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i data-feather="moon"></i>
+            </div>
+        </header>
+
+        <main class="home">
+            <div class="hero">
+                <div class="content">
+                    <div class="badge">Aspiring Business Leader</div>
+                    <h1>Muhammad Jalal Wajid</h1>
+                    <h2>Aspiring Business Leader | <span class="gradient-text">Marketing Enthusiast</span> | Future
+                        Innovator</h2>
+                    <p class="intro">Welcome! I'm a BBA student at the Institute of Business Administration (IBA),
+                        Karachi. With hands-on experience in marketing, procurement, and startup environments, I'm
+                        passionate about combining creativity with strategy to build impactful business solutions.</p>
+
+                    <div class="cta-container">
+                        <a href="portfolio.html" class="cta-button primary">View My Skills</a>
+                        <a href="contact.html" class="cta-button secondary">Get in Touch</a>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">IBA</div>
+                            <div class="stat-label">Education</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">BBA</div>
+                            <div class="stat-label">Degree Program</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2026</div>
+                            <div class="stat-label">Graduation Year</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-image">
+                    <div class="profile-wrapper">
+                        <div class="profile-gradient"></div>
+                        <img src="assets/WhatsApp Image 2025-05-18 at 18.00.00.jpeg" alt="Muhammad Jalal Wajid">
+                    </div>
+                    <div class="tech-badges">
+                        <div class="tech-badge">Marketing</div>
+                        <div class="tech-badge">Procurement</div>
+                        <div class="tech-badge">Business Development</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="short-bio">
+                <div class="section-title">
+                    <h3>About Me</h3>
+                    <a href="about.html" class="view-more">View more <i data-feather="arrow-right"></i></a>
+                </div>
+                <p>
+                    I'm currently pursuing my Bachelor's in Business Administration at IBA Karachi, with a keen interest
+                    in marketing, operations, and entrepreneurial ventures. My journey began in my family's construction
+                    business, where I learned the fundamentals of procurement and management. Since then, I've interned
+                    at various organizations and am actively seeking opportunities to work with dynamic startups and
+                    FMCG brands.
+                </p>
+            </section>
+
+            <section class="featured-work">
+                <div class="section-title">
+                    <h3>Key Skills</h3>
+                    <a href="portfolio.html" class="view-more">View more <i data-feather="arrow-right"></i></a>
+                </div>
+                <div class="work-cards">
+                    <div class="work-card">
+                        <div class="card-icon"><i data-feather="bar-chart-2"></i></div>
+                        <h4>Digital Marketing</h4>
+                        <p>SEO, Social Media Strategy, and Content Marketing expertise.</p>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-icon"><i data-feather="truck"></i></div>
+                        <h4>Procurement</h4>
+                        <p>Supply Chain Management and Logistics fundamentals.</p>
+                    </div>
+                    <div class="work-card">
+                        <div class="card-icon"><i data-feather="search"></i></div>
+                        <h4>Market Research</h4>
+                        <p>Consumer Analysis and FMCG industry trend identification.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">MJW<span class="accent">.</span></div>
+                    <p>Aspiring to build a career at the intersection of marketing, innovation, and business
+                        development.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="http://linkedin.com/in/mjalalw" target="_blank"><i data-feather="linkedin"></i></a>
+                        <a href="mailto:m.jalal.w10@gmail.com"><i data-feather="mail"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Muhammad Jalal Wajid. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            feather.replace();
+
+            // Theme toggle
+            const themeToggle = document.querySelector('.theme-toggle');
+            themeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                const icon = themeToggle.querySelector('i');
+                if (document.body.classList.contains('dark-mode')) {
+                    icon.setAttribute('data-feather', 'sun');
+                } else {
+                    icon.setAttribute('data-feather', 'moon');
+                }
+                feather.replace();
+            });
+        });
+    </script>
+</body>
+
+</html>
